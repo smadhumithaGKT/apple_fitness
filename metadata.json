@@ -1,0 +1,6 @@
+{
+  "name": "Fitness Dashboard",
+  "description": "A dark-mode healthcare and fitness dashboard with concentric activity rings, summary data, and workout tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

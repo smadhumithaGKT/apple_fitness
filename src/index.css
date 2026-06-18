@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Premium Immersive UI colors for Apple Fitness rings & accents */
+  --color-move-pink: #ff2d55;
+  --color-exercise-green: #a4ff00;
+  --color-stand-blue: #00f0ff;
+  
+  --color-move-pink-bg: #31000b;
+  --color-exercise-green-bg: #132b00;
+  --color-stand-blue-bg: #001a2b;
+
+  --color-card-dark: #1c1c1e;
+  --color-border-dark: #313131;
+  --color-text-muted: #8e8e93;
+}
+
+@utility scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Accent pulsing for loading states */
+@keyframes ring-glow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
+}
